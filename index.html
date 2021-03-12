@@ -1,0 +1,3557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Medly Manhattan</title>
+        <meta name="description" content="" />
+        <!-- FAVICON START -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://medly.com/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://medly.com/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="https://medly.com/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="manifest"
+            href="https://medly.com/favicon/site.webmanifest.json"
+        />
+        <link
+            rel="mask-icon"
+            href="https://medly.com/favicon/safari-pinned-tab.svg"
+            color="#3cdbc0"
+        />
+        <link
+            rel="shortcut icon"
+            href="https://medly.com/favicon/favicon.ico"
+        />
+        <meta
+            name="msapplication-config"
+            content="https://medly.com/favicon/browserconfig.xml"
+        />
+        <!-- FAVICON END -->
+        <!-- FONT AWESOME START -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!-- FONT AWESOME END -->
+        <!-- JQUERY START -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"
+        ></script>
+        <!-- JQUERY END -->
+        <script
+            type="text/javascript"
+            src="https://www.bugherd.com/sidebarv2.js?apikey=gbnmlsyuzl5a7hddcikerw"
+            async="true"
+        ></script>
+
+        <!-- TYPOGRAPHY START -->
+        <style>
+            /* CUSTOM FONT EMBBEDING */
+
+            @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+            @font-face {
+                font-family: "Gotham Rounded Book";
+                src: url("https://dl.dropbox.com/s/95nx7lcb0wmnlsb/GothamRounded-Book.eot?dl=0");
+                src: url("https://dl.dropbox.com/s/95nx7lcb0wmnlsb/GothamRounded-Book.eot?dl=0?#iefix")
+                        format("embedded-opentype"),
+                    url("https://dl.dropbox.com/s/zuufocmzam92oen/GothamRounded-Book.woff2?dl=0")
+                        format("woff2"),
+                    url("https://go.medly.health/l/910032/2021-03-12/nh5/910032/1615566114QI1LKFGs/Gotham_Rounded_Book.woff")
+                        format("woff"),
+                    url("https://dl.dropbox.com/s/50pbnn7jfz5fbm4/GothamRounded-Book.ttf?dl=0")
+                        format("truetype"),
+                    url("https://dl.dropbox.com/s/ghpruvn3bcfnhj9/GothamRounded-Book.svg?dl=0#GothamRounded-Book")
+                        format("svg");
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Gotham Rounded Bold";
+                src: url("https://dl.dropbox.com/s/worwqa2tuhx0ddh/GothamRounded-Bold.eot?dl=0");
+                src: url("https://dl.dropbox.com/s/worwqa2tuhx0ddh/GothamRounded-Bold.eot?dl=0?#iefix")
+                        format("embedded-opentype"),
+                    url("https://dl.dropbox.com/s/9ie2l170pslwu6a/GothamRounded-Bold.woff2?dl=0")
+                        format("woff2"),
+                    url("https://dl.dropbox.com/s/moot5stan2t9mgg/GothamRounded-Bold.woff?dl=0")
+                        format("woff"),
+                    url("https://dl.dropbox.com/s/mnqdp52411b63uq/GothamRounded-Bold.ttf?dl=0")
+                        format("truetype"),
+                    url("https://dl.dropbox.com/s/kwvzrm0iy7g151u/GothamRounded-Bold.svg?dl=0#GothamRounded-Bold")
+                        format("svg");
+                font-weight: bold;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Gotham Rounded";
+                src: url("https://dl.dropbox.com/s/fw5jr02nm9zk1iz/GothamRounded-Medium.eot?dl=0");
+                src: url("https://dl.dropbox.com/s/fw5jr02nm9zk1iz/GothamRounded-Medium.eot?dl=0?#iefix")
+                        format("embedded-opentype"),
+                    url("https://dl.dropbox.com/s/nv9fcdfe82aidtx/GothamRounded-Medium.woff2?dl=0")
+                        format("woff2"),
+                    url("https://dl.dropbox.com/s/qzlfvivalc1c9d1/GothamRounded-Medium.woff?dl=0")
+                        format("woff"),
+                    url("https://dl.dropbox.com/s/cwpr2oppr6s5er5/GothamRounded-Medium.ttf?dl=0")
+                        format("truetype"),
+                    url("https://dl.dropbox.com/s/mlkd4h557528s75/GothamRounded-Medium.svg?dl=0#GothamRounded-Medium")
+                        format("svg");
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Gotham Rounded";
+                src: url("https://dl.dropbox.com/s/a1bfn2474qlk8s8/GothamRounded-Light.eot?dl=0");
+                src: url("https://dl.dropbox.com/s/a1bfn2474qlk8s8/GothamRounded-Light.eot?dl=0?#iefix")
+                        format("embedded-opentype"),
+                    url("https://dl.dropbox.com/s/70rv6cqhy6qkm7s/GothamRounded-Light.woff2?dl=0")
+                        format("woff2"),
+                    url("https://dl.dropbox.com/s/w3bbj914fs3i9na/GothamRounded-Light.woff?dl=0")
+                        format("woff"),
+                    url("https://dl.dropbox.com/s/u5ay6uge2ilea1v/GothamRounded-Light.ttf?dl=0")
+                        format("truetype"),
+                    url("https://dl.dropbox.com/s/cyxpo6k9787m1pr/GothamRounded-Light.svg?dl=0#GothamRounded-Light")
+                        format("svg");
+                font-weight: 300;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            /* TYPOGRAPHY */
+            body {
+                padding: 0;
+                font-size: 18px;
+                overflow-x: hidden;
+                -webkit-font-smoothing: antialiased;
+                width: 100%;
+                background: #fff;
+                font-family: Gotham Rounded;
+                font-style: normal;
+                margin: 0 auto;
+            }
+
+            .wrapper {
+                width: 100%;
+                max-width: 1120px;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+                padding-left: 15px;
+                padding-right: 15px;
+                box-sizing: border-box !important;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a {
+                text-transform: initial;
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                margin-bottom: 15px;
+                color: rgb(8, 32, 62);
+            }
+
+            ul,
+            li {
+                margin-bottom: 15px;
+            }
+
+            a {
+                margin-bottom: 0;
+                cursor: pointer;
+            }
+
+            h1 {
+                font-size: 64px;
+                line-height: 1.188;
+                font-weight: bold;
+            }
+
+            h2 {
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 1.24;
+            }
+
+            h3 {
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 1.222;
+            }
+
+            h4 {
+                font-size: 23px;
+                font-weight: bold;
+                line-height: 1.3;
+            }
+
+            h5 {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.3;
+            }
+
+            h6 {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.444;
+            }
+
+            .big-p p {
+                font-size: 21px;
+                line-height: 1.429;
+            }
+
+            p,
+            li {
+                font-size: 18px;
+                line-height: 1.444;
+            }
+
+            ul {
+                padding: 0;
+                text-decoration: none;
+                list-style: none;
+                margin: 20px 0;
+            }
+
+            ol {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                margin-bottom: 15px;
+            }
+
+            li {
+                position: relative;
+                margin-bottom: 8px;
+            }
+
+            .no-list-style li ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            .no-list-style li {
+                margin: 0;
+            }
+
+            .no-list-style li:before {
+                display: none;
+            }
+
+            ul li a {
+                font-size: 16px;
+            }
+
+            @media (min-width: 768px) {
+                .equal-height-container {
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-align: stretch;
+                    -moz-box-align: stretch;
+                    -webkit-align-items: stretch;
+                    -ms-flex-align: stretch;
+                    align-items: stretch;
+                }
+
+                .vertical-center {
+                    display: flex;
+                    display: -webkit-flex;
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                    justify-content: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                }
+            }
+
+            /*==================================================
+        Four Col Adjust 
+==================================================*/
+            .four-col-adjust > span {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-align: stretch;
+                -moz-box-align: stretch;
+                -webkit-align-items: stretch;
+                -ms-flex-align: stretch;
+                align-items: stretch;
+                flex-wrap: wrap;
+                -wevkit-flex-wrap: wrap;
+                flex-direction: row;
+                -webkit-flex-direction: row;
+                margin-right: -2.565%;
+                justify-content: center;
+            }
+
+            .four-col-adjust span > .hs_cos_wrapper {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-basis: 20%;
+                -webkit-flex-basis: 20%;
+                float: left;
+                margin-right: 6.2%;
+                margin-top: 30px;
+                box-sizing: border-box;
+                position: relative;
+                height: auto;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .four-col-adjust span > .hs_cos_wrapper:last-child,
+            .four-col-adjust span > .hs_cos_wrapper:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            @media (max-width: 767px) {
+                .four-col-adjust > span {
+                    display: block;
+                    margin-right: 0;
+                    height: 100%;
+                }
+
+                .four-col-adjust span > .hs_cos_wrapper {
+                    display: block;
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+
+            /* FORM STYLING START */
+
+            /* Form Style */
+            .eu form select {
+                border: 0 !important;
+                background: #fff
+                    url("https://storage.pardot.com/910032/1613591261Szn89l8H/Polygon_3.svg")
+                    no-repeat;
+                background-size: 15%;
+                background-position: 90% 40%;
+                width: 100%;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                font-family: "Gotham Rounded Book";
+                font-weight: 700;
+                font-size: 14px;
+                margin-top: 5px;
+                cursor: pointer;
+                padding: 0 9px 5px;
+                margin-bottom: 3px;
+            }
+
+            select::-ms-expand {
+                display: none;
+            }
+
+            .eu form select:focus {
+                border: 0 !important;
+                outline: 0;
+            }
+
+            .eu form select option {
+                width: 100%;
+                color: #0a1118;
+                background: #f7f8f9;
+                font-family: "Gotham Rounded Book";
+            }
+
+            .eu form select option:focus {
+                outline: 0;
+                border: 0 !important;
+                font-family: "Gotham Rounded Book";
+            }
+
+            .eu .form-area form {
+                padding: 0;
+                margin: 0;
+                max-width: 600px;
+                height: 100%;
+                display: inline-block;
+            }
+
+            .eu .form-area .thank-you p {
+                color: rgb(19, 24, 29);
+                font-size: 16px;
+            }
+
+            .eu .form-area .form-field {
+                width: 41.7% !important;
+                float: left !important;
+                padding: 0 !important;
+                margin: 0 5% 25px 0px !important;
+                clear: inherit !important;
+                display: inline-block;
+            }
+
+            .eu .form-area .form-field:nth-child(2n) {
+                margin: 0 0 7px 0px;
+            }
+
+            .eu .form-area .form-field input[type="text"],
+            .eu .form-area .form-field select,
+            .eu .form-area .form-field textarea {
+                -webkit-appearance: none !important;
+                background-color: #fff !important;
+                border: 2px solid #a1c2f9 !important;
+                border-radius: 20px !important;
+                box-shadow: none !important;
+                display: block !important;
+                height: 44px !important;
+                padding: 7px 15px !important;
+                font-size: 15px !important;
+                font-family: "Gotham Rounded" !important;
+                color: rgb(8, 32, 62) !important;
+                line-height: 1.2 !important;
+                width: 100% !important;
+                -webkit-appearance: none !important;
+                -moz-appearance: none !important;
+                -ms-appearance: none !important;
+                appearance: none !important;
+                box-sizing: border-box !important;
+            }
+
+            .eu .form-area input::placeholder {
+                font-size: 15px !important;
+                font-family: "Gotham Rounded" !important;
+                color: rgb(0, 90, 238) !important;
+                line-height: 1.2 !important;
+                font-weight: 300;
+            }
+
+            .eu .form-area .form-field input[type="text"]:focus,
+            .eu .form-area .form-field select:focus {
+                border-color: rgb(0, 90, 238) !important;
+                border-radius: 20px !important;
+                outline: 0 !important;
+            }
+
+            .eu .form-area form.form p span.description {
+                margin-left: 0 !important;
+                font-family: "Roboto", sans-serif !important;
+                color: #3c1c11 !important;
+                font-weight: 300 !important;
+                font-size: 13px !important;
+                margin-top: -22px;
+            }
+
+            .eu .form-area form.form p span.description a {
+                color: #3c1c11 !important;
+            }
+
+            .eu .form-area form.form p span.description a:hover {
+                color: #3c1c11 !important;
+            }
+
+            .eu .form-area form.form p label {
+                width: 100% !important;
+                padding-bottom: 0 !important;
+                padding-top: 0 !important;
+                min-height: inherit !important;
+                text-align: left;
+                background: none !important;
+                padding-right: 0 !important;
+                font-size: 15px !important;
+                font-family: "Gotham Rounded Bold" !important;
+                color: rgb(9, 32, 62) !important;
+                line-height: 1.2 !important;
+                font-weight: 300;
+                float: left;
+            }
+
+            .eu .form-area .submit {
+                float: left;
+                text-align: center;
+                clear: none;
+                margin-top: 32px !important;
+                width: 100% !important;
+                margin: 0px !important;
+            }
+
+            .eu .form-area .submit input {
+                height: 52px !important;
+                transition: 0.5s;
+                -webkit-transition: 0.5s;
+                -moz-transition: 0.5s;
+                -o-transition: 0.5s;
+                border: none !important;
+                margin-bottom: 0px !important;
+                width: 100% !important;
+                float: left;
+                letter-spacing: 0 !important;
+                cursor: pointer;
+                margin: 0 !important;
+                color: #fff !important;
+                display: inline-block !important;
+                background-color: #08203e !important;
+                padding: 2px 20px !important;
+                border-radius: 40px !important;
+                max-width: 250px;
+                font-size: 16px;
+                font-family: "Gotham Rounded";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 1.375;
+            }
+
+            .eu .form-area .submit input:hover {
+                background-color: rgb(8 32 62 / 80%) !important;
+            }
+
+            /* error msg */
+            .eu p.error input[type="text"] {
+                border-color: red !important;
+            }
+
+            .eu .form-area .form-field.error input[type="text"],
+            .eu .form-area .form-field.error select,
+            .eu .form-area .form-field.error textarea {
+                border-color: red !important;
+            }
+
+            .eu .form p {
+                color: #fff;
+                font-size: 20px;
+                line-height: 29px;
+            }
+
+            .eu p.error.no-label {
+                float: left;
+                color: red !important;
+                font-size: 13px;
+                padding-bottom: 6px;
+                text-align: left !important;
+                display: none;
+            }
+
+            .eu .form-area form p.errors {
+                color: red !important;
+                font-size: 13px;
+                padding-bottom: 14px;
+                text-align: center;
+                display: none;
+            }
+
+            .eu .form-area form.form .value span {
+                position: relative;
+                width: 100%;
+                float: left;
+                display: flex;
+            }
+
+            .eu .form-area form.form .pd-radio input:before {
+                position: absolute;
+                content: "";
+                border: 2px solid #a1c2f9 !important;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                left: 0;
+                top: 0;
+            }
+
+            .eu .form-area form.form .value span label,
+            .eu .form-area form.form .value span label {
+                padding-left: 20px;
+            }
+
+            .eu form.form span.value {
+                margin-left: 0 !important;
+                display: flex;
+                width: 100%;
+                padding-top: 5px;
+            }
+
+            .eu .form-area form.form .pd-checkbox input,
+            .eu .form-area form.form .pd-radio input {
+                margin: 3px 5px 0 0 !important;
+                appearance: none;
+                position: relative;
+                cursor: pointer;
+            }
+
+            .eu .form-area form.form .pd-checkbox input + label::before {
+                position: absolute;
+                left: 0;
+                top: 5px;
+                content: "";
+                width: 15px;
+                height: 15px;
+                background: rgb(0, 90, 238);
+            }
+
+            .eu
+                .form-area
+                form.form
+                .pd-checkbox
+                input:checked
+                + label::before {
+                background: rgb(0, 90, 238) !important;
+            }
+
+            .eu .form-area form.form .pd-radio input:checked::before {
+                background: rgb(0, 90, 238) !important;
+            }
+
+            /* FORM STYLING END */
+
+            /* HEADER STYLING START */
+
+            .header-section {
+                background: #fff;
+                padding: 35px 0;
+                border-bottom: 2px solid #f3f3f3;
+            }
+
+            .header-section .logo {
+                width: 198px;
+                margin-top: 5px;
+            }
+
+            .header-section .cont .left-col {
+                width: 75%;
+            }
+
+            .header-section .cont .right-col {
+                width: 25%;
+            }
+
+            .header-section .wrap {
+                display: flex;
+            }
+
+            .header-section .wrap .left-col {
+                width: 55%;
+            }
+
+            .header-section .wrap .right-col {
+                width: 45%;
+            }
+
+            .header-section .wrap .left-col a {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 2.813;
+                text-align: left;
+            }
+
+            #content.ny [data-lang="ny"],
+            #content.spa [data-lang="spa"] {
+                display: block;
+            }
+
+            .switch {
+                position: relative;
+                cursor: pointer;
+                border: 1px solid #98a7b7;
+                border-radius: 4px;
+                /*padding: 12px 10px 8px;*/
+            }
+
+            .switch p {
+                font-size: 12px;
+                font-family: "Open Sans", sans-serif;
+                color: rgb(96, 120, 144);
+                line-height: 1.2;
+                margin: 0;
+                padding: 12px 10px 0;
+            }
+
+            .switch .arrow {
+                position: absolute;
+                right: 20px;
+                top: 30px;
+            }
+
+            .current {
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+                transition: all 0.2s ease-out;
+            }
+
+            .current span {
+                display: inline-block;
+                font-size: 16px;
+                color: rgb(19, 24, 29);
+                line-height: 1.625;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 600;
+            }
+
+            .options {
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: -72%;
+                z-index: 0;
+                opacity: 0;
+                transition: all 0.36s ease-out;
+                display: none;
+                overflow: hidden;
+                box-shadow: 0 0 0 0 rgb(0 0 0 / 0%);
+                background: #f7f8f9;
+                border: 0;
+                border-radius: 4px;
+            }
+
+            .switch.show-options .options {
+                display: block;
+                z-index: 5;
+            }
+
+            .switch.anim-options .options {
+                opacity: 1;
+            }
+
+            .switch.show-shadow .options {
+                box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.4);
+            }
+
+            .options-list {
+                margin: 0;
+                padding: 12px 10px;
+                position: relative;
+                z-index: 5;
+            }
+
+            .options-list li {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                white-space: nowrap;
+                font-size: 16px;
+                color: rgb(19, 24, 29);
+                font-weight: bold;
+                line-height: 1.625;
+            }
+
+            .options-list li.selected {
+                display: none;
+            }
+
+            /* HEADER STYLING END */
+
+            /* SECTION1 STYLING START */
+
+            .section-1 {
+                padding: 70px 0 76px;
+                position: relative;
+            }
+
+            .section-1:after {
+                position: absolute;
+                content: "";
+                right: -110px;
+                bottom: -58px;
+                background: url("https://storage.pardot.com/910032/1613662047Z6RY3PGY/City_Illustration_NY.svg")
+                    no-repeat;
+                background-position: center center;
+                background-size: cover;
+                width: 700px;
+                height: 617px;
+                z-index: -1;
+            }
+
+            .section-1 .heading {
+                max-width: 900px;
+            }
+
+            .section-1 .description {
+                max-width: 600px;
+                padding: 20px 0 18px;
+            }
+
+            .section-1 h1 span,
+            .section-1 p {
+                font-family: "Gotham Rounded Book";
+                font-weight: normal;
+            }
+
+            .tabber ul li {
+                font-size: 16px;
+                color: rgb(152, 167, 183);
+                line-height: 1.625;
+                display: inline-block;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            .tabber ul li.active {
+                color: rgb(19, 24, 29);
+                border-bottom: 2px solid rgb(0, 90, 238);
+            }
+
+            /* SECTION1 STYLING END */
+
+            /* SECTION2 STYLING START */
+            .section-2 {
+                background: #3cdbc0;
+                padding: 121px 0 100px;
+                position: relative;
+            }
+
+            .section-2:after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-top: 50px solid #3cdbc0;
+                left: 0;
+                right: 0;
+                bottom: -49px;
+                margin: 0 auto;
+            }
+
+            .section-2 .wrapper {
+                display: flex;
+            }
+
+            .section-2 p {
+                font-family: "Gotham Rounded Book";
+            }
+
+            .section-2 span {
+                font-family: "Gotham Rounded";
+                font-weight: bold;
+            }
+
+            .section-2 .left-col {
+                width: 40%;
+            }
+
+            .section-2 .right-col {
+                margin-left: 10%;
+                width: 50%;
+            }
+
+            /* SECTION2 STYLING END */
+
+            /* SECTION3 STYLING START */
+
+            .section-3 {
+                padding: 100px 30px 100px;
+                text-align: center;
+            }
+
+            .section-3 .img {
+                min-height: 105px;
+                padding-bottom: 10px;
+            }
+
+            .section-3 .four-col-adjust {
+                padding-top: 26px;
+            }
+
+            .section-3 .card-heading {
+                min-height: 60px;
+                padding-bottom: 10px;
+            }
+
+            .section-3 p {
+                font-family: "Gotham Rounded Book";
+            }
+
+            /* SECTION3 STYLING END */
+
+            /* SECTION4 STYLING START */
+
+            .section-4 {
+                padding: 200px 0 130px;
+                background: #3cdbc0;
+                position: relative;
+            }
+
+            .section-4::after {
+                position: absolute;
+                content: url(https://storage.pardot.com/910032/1614279490qFBMJHsf/Point_Green.svg);
+                top: 100%;
+                left: 50%;
+                margin-left: -28px;
+                margin-top: -5px;
+            }
+
+            .section-4 .wrapper {
+                display: flex;
+                max-width: 1210px;
+            }
+
+            .section-4 .left-col {
+                width: 59%;
+                position: relative;
+                text-align: center;
+            }
+
+            .section-4 .left-col::before {
+                background: url("https://storage.pardot.com/910032/161366204766Lfr1tZ/Frame_01.svg")
+                    no-repeat;
+                background-size: cover;
+                background-position: center center;
+                position: absolute;
+                content: "";
+                right: 0;
+                left: -31px;
+                margin: 0 auto;
+                height: 495px;
+                top: -70px;
+            }
+
+            .section-4 .left-col a {
+                display: block;
+                position: relative;
+            }
+
+            .section-4 .play-icon {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: 35%;
+                width: 100px;
+            }
+
+            .section-4 .right-col {
+                width: 40%;
+                margin-left: 5%;
+            }
+
+            .section-4 .description {
+                padding-top: 42px;
+            }
+
+            .section-4 ol {
+                list-style: none;
+                counter-reset: my-awesome-counter;
+                max-width: 430px;
+            }
+
+            .section-4 ol li {
+                counter-increment: my-awesome-counter;
+                position: relative;
+                padding-left: 70px;
+                min-height: 50px;
+                padding-bottom: 20px;
+                font-family: "Gotham Rounded Book";
+            }
+
+            .section-4 ol li a {
+                font-size: 18px;
+                font-family: "Gotham Rounded";
+                color: rgb(0, 0, 0);
+                line-height: 1.556;
+                font-weight: bold;
+            }
+
+            .section-4 ol li:before {
+                content: counter(my-awesome-counter);
+                position: absolute;
+                background: #126afa;
+                border-radius: 100%;
+                width: 43px;
+                height: 23px;
+                text-align: center;
+                padding: 7px 0 13px;
+                left: 0;
+                font-size: 21px;
+                font-family: "Gotham Rounded Bold";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 1.333;
+                top: 5px;
+            }
+
+            .section-4 .cta {
+                background: #005aeb;
+                border-radius: 30px;
+                padding: 15px 20px;
+                width: 100%;
+                max-width: 218px;
+                margin: 0 auto;
+                bottom: -17px;
+                position: absolute;
+                left: 0;
+                right: 0;
+            }
+
+            .section-4 .cta p {
+                margin: 0;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.375;
+            }
+
+            /* SECTION4 STYLING END */
+
+            /* SECTION5 STYLING START */
+            .section-5 {
+                padding: 100px 0;
+                background: #005aee;
+                text-align: center;
+                color: #fff;
+            }
+
+            .section-5 h2,
+            .section-5 p {
+                color: #fff;
+            }
+
+            .section-5 p {
+                font-family: "Gotham Rounded Book";
+                line-height: 1.429;
+            }
+
+            .section-5 .description {
+                padding: 40px 0;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .section-5 .list-item {
+                display: flex;
+            }
+
+            .section-5 ul {
+                width: 28%;
+                margin-left: 20%;
+            }
+
+            .section-5 ul:first-child {
+                margin-left: 0;
+            }
+
+            .section-5 ul li {
+                margin-bottom: 3px;
+                text-align: left;
+                height: auto;
+                padding-left: 40px;
+                font-weight: bold;
+            }
+
+            .section-5 ul li:after {
+                position: absolute;
+                content: "";
+                background: #3cdbc0
+                    url("https://storage.pardot.com/910032/1613040001AtvAj7jn/tick.png")
+                    no-repeat;
+                background-position: center;
+                background-size: auto;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                left: 0;
+                top: 2px;
+            }
+
+            /* SECTION5 STYLING END */
+            /* SECTION6 STYLING START */
+            .section-6 {
+                padding: 146px 0;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .section-6 .wrapper {
+                display: flex;
+            }
+
+            .section-6 .left-col {
+                width: 69%;
+            }
+
+            .section-6 .right-col {
+                width: 31%;
+                position: absolute;
+                right: 0;
+                bottom: -130px;
+                text-align: right;
+            }
+
+            .section-6 .right-col img {
+                max-width: 542px;
+                height: auto;
+            }
+
+            .section-6 .heading {
+                padding-bottom: 50px;
+                max-width: 700px;
+            }
+
+            .accordion_header {
+                width: 100%;
+                display: block;
+                position: relative;
+            }
+
+            .accordion_header h4 {
+                margin: 0;
+                cursor: pointer;
+                line-height: 1.4em;
+            }
+
+            .accordion_header:after {
+                position: absolute;
+                right: 0;
+                content: "";
+                top: -5px;
+                width: 40px;
+                height: 40px;
+                background: #126afa
+                    url("https://storage.pardot.com/910032/1613662047UZNdVvWA/Plus.svg")
+                    no-repeat;
+                background-size: auto;
+                border-radius: 100%;
+                background-position: center;
+                transition: 0.2s all ease-in-out;
+            }
+
+            .expanded .accordion_header:after {
+                position: absolute;
+                right: 0;
+                content: "";
+                top: -5px;
+                width: 40px;
+                height: 40px;
+                background: #126afa
+                    url("https://storage.pardot.com/910032/1613662047O6yvUqHZ/Minus.svg")
+                    no-repeat;
+                background-size: auto;
+                background-position: center;
+                transition: 0.2s all ease-in-out;
+            }
+
+            .accordion_content {
+                padding-top: 55px;
+                padding-right: 60px;
+            }
+
+            .accordion_content p {
+                font-family: "Gotham Rounded Book";
+            }
+
+            .accordion_group:first-child {
+                border-top: 2px solid #f3f3f3;
+            }
+
+            .accordion_group {
+                border-bottom: 2px solid #f3f3f3;
+                padding: 35px 0;
+            }
+
+            /* Pharmacist Section */
+            .pharmacist-section {
+                background: #efefef;
+                padding: 50px 0;
+            }
+
+            .pharmacist-section .wrapper {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            .pharmacist-section h3 {
+                margin-right: 40px;
+            }
+
+            .pharmacist-section .arrow-icon {
+                margin-right: 40px;
+            }
+
+            .pharmacist-section .pharmacist-image {
+                max-width: 180px;
+                border-radius: 50%;
+                margin: 0 30px;
+            }
+
+            .pharmacist-section .text {
+                margin-left: 40px;
+                font-weight: 300;
+            }
+
+            .pharmacist-section .text span {
+                display: block;
+                font-weight: 700;
+            }
+
+            /* SECTION6 STYLING END */
+
+            /* SECTION7 STYLING START */
+            .section-7 {
+                padding: 100px 0;
+                background: #f7f7f7;
+            }
+
+            .section-7 .wrapper {
+                display: flex;
+            }
+
+            .section-7 .left-col {
+                width: 47.5%;
+                position: relative;
+            }
+
+            .section-7 .right-col {
+                width: 42.5%;
+                margin-left: 10%;
+            }
+
+            .section-7 .cta {
+                background: #005aeb;
+                border-radius: 30px;
+                padding: 15px 20px;
+                width: 100%;
+                max-width: 218px;
+                margin: -30px auto 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            .section-7 .cta p {
+                margin: 0;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.375;
+                text-align: center;
+            }
+
+            .section-7 .right-col p {
+                font-family: "Gotham Rounded Book";
+            }
+
+            .section-7 .right-col p span {
+                font-weight: bold;
+                font-family: "Gotham Rounded";
+            }
+
+            .section-7 .description {
+                padding-top: 18px;
+            }
+
+            .section-7 .description img {
+                max-width: 200px;
+                margin: 25px 0 15px;
+            }
+
+            /* SECTION7 STYLING END */
+
+            /* FOOTER STYLING START */
+            .footer-section {
+                background: #08203e;
+                padding: 100px 0 50px;
+                color: #fff;
+            }
+
+            .footer-section .wrapper {
+                max-width: 1390px;
+            }
+
+            .footer-section ul li a {
+                color: #fff;
+            }
+
+            .footer-section .footer-top {
+                display: flex;
+            }
+
+            .footer-top .contact {
+                width: 43.5%;
+            }
+
+            .footer-top .contact ul,
+            .footer-top .menu ul {
+                margin: 0;
+            }
+
+            .footer-top .contact ul li a,
+            .footer-top .contact ul li {
+                font-size: 14px;
+                font-family: "Gotham Rounded Book";
+                line-height: 2;
+            }
+
+            .footer-top .app {
+                width: 20%;
+                display: flex;
+            }
+
+            .footer-top .logo {
+                width: 11%;
+            }
+
+            .footer-top .menu {
+                width: 26.5%;
+            }
+
+            .footer-top .menu li,
+            .footer-top .contact li {
+                margin: 0;
+            }
+
+            .footer-top .menu a {
+                font-size: 21px;
+                font-family: "Gotham Rounded Book";
+                line-height: 1.6;
+            }
+
+            .footer-section .socials {
+                padding-top: 20px;
+            }
+
+            .footer-top .socials li {
+                display: inline-block;
+                padding-right: 15px;
+            }
+
+            .footer-top .socials .fab {
+                font-family: "Font Awesome 5 Brands";
+                font-size: 23px;
+            }
+
+            .footer-top .socials li:hover .fab {
+                color: #808f9f;
+            }
+
+            .footer-top .legit img {
+                width: 67px;
+            }
+
+            .footer-top .appstore {
+                margin-left: 40px;
+            }
+
+            .footer-bottom {
+                padding-top: 104px;
+            }
+
+            .footer-bottom ul {
+                margin: 0;
+            }
+
+            .footer-bottom ul li,
+            .footer-bottom ul li a {
+                font-size: 12px;
+                font-family: "Gotham Rounded Book";
+                line-height: 2.5;
+                display: inline-block;
+                margin: 0;
+            }
+
+            .footer-bottom ul li {
+                padding-right: 18px;
+            }
+
+            .footer-bottom ul li:hover a {
+                text-decoration: underline;
+            }
+
+            .footer-bottom ul li:first-child {
+                padding-right: 48px;
+            }
+
+            /* FOOTER STYLING END */
+
+            /* RESPONSIVE STYLING */
+
+            @media (max-width: 1419px) {
+                .footer-section .wrapper {
+                    max-width: 1120px;
+                }
+            }
+
+            @media (max-width: 1250px) {
+                .footer-section .wrapper,
+                .eu .wrapper {
+                    max-width: 975px;
+                }
+
+                .footer-top .contact {
+                    width: 38.5%;
+                }
+
+                .footer-top .app {
+                    width: 25%;
+                    display: flex;
+                }
+            }
+
+            @media (max-width: 1024px) {
+                h1 {
+                    font-size: 56px;
+                }
+
+                h2 {
+                    font-size: 44px;
+                }
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                h4 {
+                    font-size: 24px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                }
+
+                .big-p p {
+                    font-size: 18px;
+                }
+
+                p,
+                li {
+                    font-size: 16px;
+                }
+
+                .footer-section .wrapper,
+                .eu .wrapper {
+                    max-width: 880px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                }
+
+                .section-1 .heading {
+                    max-width: 760px;
+                }
+
+                .section-1 .description {
+                    max-width: 500px;
+                }
+
+                .section-1:after {
+                    width: 400px;
+                    height: 400px;
+                    z-index: -1;
+                }
+
+                .section-2 .left-col {
+                    width: 46%;
+                }
+
+                .section-2 .right-col {
+                    margin-left: 4%;
+                    width: 50%;
+                }
+
+                .section-2,
+                .section-3,
+                .section-4,
+                .section-5,
+                .section-6,
+                .section-7 {
+                    padding: 70px 0;
+                }
+
+                .section-4 .left-col::before {
+                    left: 0;
+                    margin: 0 auto;
+                    height: 345px;
+                    top: -20px;
+                }
+
+                .section-4 .thumbnail {
+                    width: 450px;
+                    margin: 0 auto;
+                }
+
+                .section-4 .thumbnail img {
+                    width: 100%;
+                }
+
+                .section-6 .right-col {
+                    width: 31%;
+                    margin-left: 4%;
+                }
+
+                .section-6 .left-col {
+                    width: 65%;
+                }
+
+                .section-6 .right-col img {
+                    max-width: 277px;
+                    height: auto;
+                }
+
+                .accordion_content {
+                    padding-top: 30px;
+                }
+
+                .accordion_header h4 {
+                    padding-right: 40px;
+                }
+
+                .footer-top .menu a {
+                    font-size: 24px;
+                }
+
+                .footer-bottom {
+                    padding-top: 80px;
+                }
+
+                .footer-section {
+                    padding: 70px 0 50px;
+                }
+
+                .footer-top .contact {
+                    width: 35.5%;
+                }
+
+                .footer-top .app {
+                    width: 27%;
+                }
+            }
+
+            @media (max-width: 920px) {
+                .footer-section .wrapper,
+                .eu .wrapper {
+                    max-width: 770px;
+                }
+
+                h1 {
+                    font-size: 48px;
+                }
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                h3 {
+                    font-size: 26px;
+                }
+
+                h4 {
+                    font-size: 22px;
+                }
+
+                h5 {
+                    font-size: 16px;
+                }
+
+                .big-p p {
+                    font-size: 16px;
+                }
+
+                .eu .form-area form {
+                    max-width: 500px;
+                }
+
+                .eu .form-area .submit input {
+                    max-width: 208px;
+                }
+
+                .header-section {
+                    padding: 30px 0;
+                }
+
+                .header-section .cont .left-col {
+                    width: 60%;
+                }
+
+                .header-section .cont .right-col {
+                    width: 40%;
+                }
+
+                .section-1 .heading {
+                    max-width: 600px;
+                }
+
+                .section-1 .description {
+                    max-width: 400px;
+                }
+
+                .section-1:after {
+                    width: 300px;
+                    height: 300px;
+                    z-index: -1;
+                    bottom: -30px;
+                }
+
+                .section-2 .left-col {
+                    width: 46%;
+                }
+
+                .section-2 .right-col {
+                    margin-left: 4%;
+                    width: 50%;
+                }
+
+                .section-2,
+                .section-3,
+                .section-5,
+                .section-6,
+                .section-7 {
+                    padding: 70px 0;
+                }
+
+                .section-3 p {
+                    font-size: 14px;
+                }
+
+                .section-4 {
+                    padding: 0 0 70px;
+                }
+
+                .section-4 .left-col::before {
+                    left: 0;
+                    margin: 0 auto;
+                    height: 276px;
+                    top: -20px;
+                }
+
+                .section-4 .thumbnail {
+                    width: 300px;
+                    margin: 0 auto;
+                }
+
+                .section-4 .play-icon {
+                    width: 50px;
+                }
+
+                .section-4 .thumbnail img,
+                .section-4 .play-icon img {
+                    width: 100%;
+                }
+
+                .eu .cta p {
+                    font-size: 14px;
+                }
+
+                .section-4 .cta {
+                    max-width: 180px;
+                }
+
+                .section-4 ol li:before {
+                    width: 33px;
+                    height: 26px;
+                    text-align: center;
+                    padding: 2px 0;
+                    font-size: 18px;
+                }
+
+                .section-4 .right-col {
+                    width: 42%;
+                    margin-left: 3%;
+                }
+
+                .section-4 ol li {
+                    padding-left: 40px;
+                    padding-bottom: 10px;
+                }
+
+                .section-5 ul {
+                    width: 32%;
+                    margin-left: 5%;
+                }
+
+                .section-5 ul li {
+                    padding-left: 30px;
+                    margin-bottom: 10px;
+                }
+
+                .section-6 .right-col img {
+                    width: 100%;
+                    width: 100%;
+                }
+
+                .section-6 .left-col {
+                    width: 60%;
+                }
+
+                .section-6 .right-col {
+                    width: 30%;
+                    margin-left: 10%;
+                }
+
+                .expanded .accordion_header:after,
+                .accordion_header:after {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .accordion_group {
+                    padding: 28px 0;
+                }
+
+                .accordion_content {
+                    padding-top: 30px;
+                }
+
+                .accordion_header h4 {
+                    padding-right: 40px;
+                }
+
+                .footer-top .menu a {
+                    font-size: 20px;
+                }
+
+                .footer-top .contact ul li a,
+                .footer-top .contact ul li {
+                    font-size: 14px;
+                }
+
+                .footer-bottom {
+                    padding-top: 80px;
+                }
+
+                .footer-section {
+                    padding: 70px 0 50px;
+                }
+
+                .footer-top .contact {
+                    width: 35.5%;
+                }
+
+                .footer-top .app {
+                    width: 29%;
+                }
+
+                .footer-top .appstore {
+                    margin-left: 10px;
+                }
+
+                .footer-top .logo {
+                    width: 9%;
+                }
+
+                .pharmacist-section h3 {
+                    margin-right: 20px;
+                }
+
+                .pharmacist-section .arrow-icon {
+                    margin-right: 20px;
+                }
+
+                .pharmacist-section .pharmacist-image {
+                    max-width: 150px;
+                    margin: 0 20px;
+                }
+
+                .pharmacist-section .text {
+                    margin-left: 20px;
+                }
+            }
+
+            @media (max-width: 767px) {
+                .footer-section .wrapper,
+                .eu .wrapper {
+                    max-width: 100%;
+                    display: block;
+                }
+
+                h1 {
+                    font-size: 44px;
+                }
+
+                h2 {
+                    font-size: 36px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-size: 20px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                }
+
+                .big-p p {
+                    font-size: 16px;
+                }
+
+                .eu .cta p {
+                    font-size: 12px;
+                }
+
+                .eu .cta {
+                    max-width: 160px;
+                }
+
+                .eu form select {
+                    background-size: 10%;
+                }
+
+                .eu .form-area form {
+                    max-width: 100%;
+                }
+
+                .eu .form-area .submit input {
+                    max-width: 208px;
+                }
+
+                .header-section {
+                    padding: 30px 0;
+                }
+
+                .header-section .cont .left-col,
+                .header-section .cont .right-col,
+                .section-2 .left-col,
+                .section-2 .right-col,
+                .section-4 .left-col,
+                .section-4 .right-col,
+                .section-6 .left-col,
+                .section-6 .right-col,
+                .section-7 .left-col,
+                .section-7 .right-col {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                .header-section .wrap .right-col {
+                    width: 35% !important;
+                }
+
+                .header-section .wrap .left-col {
+                    width: 55% !important;
+                    text-align: center;
+                    padding: 8px 0;
+                }
+
+                .header-section .cont .logo {
+                    padding-bottom: 20px;
+                    max-width: 210px;
+                    margin: 0 auto;
+                }
+
+                .header-section .cont .logo img {
+                    width: 100%;
+                }
+
+                .switch {
+                    max-width: 130px;
+                    margin: 0 auto;
+                }
+
+                .section-1 .heading {
+                    max-width: 100%;
+                }
+
+                .section-1 .description {
+                    max-width: 100%;
+                }
+
+                .section-1:after {
+                    width: 250px;
+                    height: 250px;
+                    z-index: -1;
+                    bottom: -23px;
+                    display: none;
+                }
+
+                .section-1,
+                .section-2,
+                .section-5,
+                .section-6,
+                .section-7 {
+                    padding: 40px 0;
+                }
+
+                .section-3 {
+                    padding: 60px 0 40px;
+                }
+
+                .section-3 p {
+                    font-size: 14px;
+                }
+
+                .section-3 .four-col-adjust {
+                    padding-top: 26px;
+                    position: relative;
+                    display: inline-table;
+                }
+
+                .section-3 .card-heading {
+                    min-height: auto;
+                    padding-bottom: 0;
+                }
+
+                .section-3 .card-heading br {
+                    display: none;
+                }
+
+                .section-3 .img {
+                    min-height: auto;
+                    padding-bottom: 20px;
+                }
+
+                .section-4 .left-col::before {
+                    display: none;
+                }
+
+                .section-4 {
+                    padding: 0 0 70px;
+                }
+
+                .section-4 .right-col {
+                    padding-top: 40px;
+                }
+
+                .section-4 .thumbnail {
+                    width: 300px;
+                    margin: 0 auto;
+                }
+
+                .section-4 .play-icon {
+                    width: 50px;
+                }
+
+                .section-4 .thumbnail img,
+                .section-4 .play-icon img {
+                    width: 100%;
+                }
+
+                .section-4 .description {
+                    padding-top: 10px;
+                }
+
+                .section-4 .thumbnail {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .section-4 ol li:before {
+                    width: 26px;
+                    height: 22px;
+                    text-align: center;
+                    padding: 2px 0;
+                    font-size: 16px;
+                }
+
+                .section-4 ol li:nth-child(2) {
+                    padding-top: 7px;
+                }
+
+                .section-4 {
+                    padding: 0 0 30px;
+                }
+
+                .section-4 ol li {
+                    padding-left: 40px;
+                    padding-bottom: 10px;
+                }
+
+                .section-4 .wrapper {
+                    padding: 50px 50px 0;
+                }
+
+                .section-5 .description {
+                    padding: 20px 0;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+
+                .section-6 .right-col {
+                    position: relative;
+                    padding-top: 30px;
+                }
+
+                .section-6 .heading {
+                    padding-bottom: 30px;
+                    max-width: 100%;
+                }
+
+                .section-6 .right-col img {
+                    display: none;
+                }
+
+                .expanded .accordion_header:after,
+                .accordion_header:after {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .accordion_group {
+                    padding: 20px 0;
+                }
+
+                .accordion_content {
+                    padding-top: 20px;
+                }
+
+                .accordion_header h4 {
+                    padding-right: 40px;
+                }
+
+                .section-7 .right-col {
+                    padding-top: 40px;
+                }
+
+                .section-7 .description {
+                    padding-top: 10px;
+                }
+
+                .footer-section .footer-top {
+                    display: inline-block;
+                    width: 100%;
+                }
+
+                .footer-top .logo {
+                    width: 12%;
+                    display: inline-block;
+                    float: left;
+                }
+
+                .footer-top .menu {
+                    width: 26%;
+                    display: inline-block;
+                    float: left;
+                }
+
+                .footer-top .contact {
+                    width: 37%;
+                    display: inline-block;
+                    float: left;
+                }
+
+                .footer-top .app {
+                    width: 25%;
+                    display: inline-block;
+                    float: left;
+                    text-align: center;
+                }
+
+                .footer-top .appstore {
+                    margin-left: 0;
+                    padding-top: 20px;
+                }
+
+                .footer-top .menu a {
+                    font-size: 15px;
+                }
+
+                .footer-section {
+                    padding: 40px 0;
+                }
+
+                .footer-top .contact ul li a,
+                .footer-top .contact ul li {
+                    font-size: 12px;
+                }
+
+                .pharmacist-section .wrapper {
+                    display: -webkit-box !important;
+                    display: -ms-flexbox !important;
+                    display: flex !important;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .pharmacist-section h3 {
+                    margin-right: 0;
+                    margin-bottom: 25px;
+                }
+
+                .pharmacist-section .arrow-icon {
+                    margin-right: 0;
+                    display: none;
+                }
+
+                .pharmacist-section .pharmacist-image {
+                    max-width: 120px;
+                    margin: 0 0 25px 0;
+                }
+
+                .pharmacist-section .text {
+                    margin-left: 0;
+                }
+
+                .section-7 .right-col {
+                    text-align: center;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .section-5 .list-item {
+                    display: block;
+                }
+
+                .section-5 ul {
+                    width: 100%;
+                    margin-left: 0;
+                    margin: 0;
+                }
+
+                .section-5 ul li {
+                    padding-left: 30px;
+                }
+
+                .footer-section .footer-top {
+                    display: inline-block;
+                }
+
+                .footer-top .app {
+                    width: 100%;
+                    padding-top: 20px;
+                    text-align: left;
+                }
+
+                .footer-top .appstore {
+                    margin-left: 0;
+                }
+
+                .footer-top .menu a {
+                    font-size: 20px;
+                }
+
+                .footer-top .contact ul li a,
+                .footer-top .contact ul li {
+                    font-size: 14px;
+                }
+
+                .footer-bottom {
+                    padding-top: 20px;
+                }
+
+                .footer-section {
+                    padding: 70px 0 50px;
+                }
+
+                .footer-top .contact {
+                    width: 100%;
+                }
+
+                .footer-top .app {
+                    width: 100%;
+                    padding-top: 20px;
+                }
+
+                .footer-top .logo {
+                    width: 100%;
+                }
+
+                .footer-top .menu {
+                    width: 100%;
+                    padding: 20px 0;
+                }
+
+                .footer-bottom ul li {
+                    padding-right: 0;
+                }
+
+                .footer-bottom ul li:first-child {
+                    padding-right: 0;
+                }
+
+                .footer-bottom ul li,
+                .footer-bottom ul li a {
+                    display: block;
+                }
+            }
+
+            @media (max-width: 480px) {
+                h1 {
+                    font-size: 34px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    line-height: 1.4;
+                }
+
+                .big-p p {
+                    font-size: 14px;
+                }
+
+                p,
+                li {
+                    font-size: 14px;
+                }
+
+                .eu .form-area .form-field {
+                    width: 100% !important;
+                    float: left !important;
+                    padding: 0 !important;
+                    margin: 0 0 25px 0px;
+                    clear: inherit !important;
+                    display: block;
+                }
+
+                .eu .form-area .submit input {
+                    max-width: 100%;
+                }
+
+                .section-1 .description {
+                    padding: 20px 0 0;
+                }
+
+                .section-2:after {
+                    border-left: 20px solid transparent;
+                    border-right: 20px solid transparent;
+                    border-top: 40px solid #3cdbc0;
+                    bottom: -35px;
+                }
+
+                .section-4 ol li br {
+                    display: none;
+                }
+
+                .section-5 ul li:after {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        </style>
+        <script
+            type="text/javascript"
+            src="https://go.pardot.com/js/piUtils.js?ver=2020-10-19"
+        ></script>
+        <script type="text/javascript">
+            piAId = "911032";
+            piCId = "1795";
+            piHostname = "pi.pardot.com";
+
+            (function () {
+                function async_load() {
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src =
+                        ("https:" == document.location.protocol
+                            ? "https://pi"
+                            : "http://cdn") + ".pardot.com/pd.js";
+                    var c = document.getElementsByTagName("script")[0];
+                    c.parentNode.insertBefore(s, c);
+                }
+                if (window.attachEvent) {
+                    window.attachEvent("onload", async_load);
+                } else {
+                    window.addEventListener("load", async_load, false);
+                }
+            })();
+        </script>
+    </head>
+
+    <body data-lang="ny" id="content" class="eu ny">
+        <!-- HEADER SECTION START -->
+        <header>
+            <div class="header-section">
+                <div class="wrapper">
+                    <div class="cont equal-height-container">
+                        <div class="left-col vertical-center">
+                            <div
+                                class="logo"
+                                pardot-region="header_logo"
+                                pardot-region-type="WYSINWYG"
+                            >
+                                <a
+                                    href="https://medly.com/en-us"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="https://storage.pardot.com/910032/1613587847BiHpHvus/Logo.svg"
+                                        alt="medly_logo"
+                                        preload
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right-col vertical-center">
+                            <div class="wrap equal-height-container">
+                                <div
+                                    class="left-col vertical-center"
+                                    pardot-region="header_phone_number"
+                                    pardot-region-type="WYSINWYG"
+                                >
+                                    <a href="tel:2123691350">212-369-1350</a>
+                                </div>
+                                <div class="right-col vertical-center">
+                                    <div
+                                        class="switch"
+                                        pardot-region="header_language"
+                                        pardot-region-type="WYSINWYG"
+                                    >
+                                        <p>Language:</p>
+                                        <form>
+                                            <select
+                                                name="state"
+                                                id="state"
+                                                onChange="window.location.href=this.value"
+                                            >
+                                                <option
+                                                    value="https://go.medly.health/manhattan"
+                                                >
+                                                    ENG
+                                                </option>
+                                                <option
+                                                    value="https://go.medly.health/manhattan-espanol"
+                                                >
+                                                    ESP
+                                                </option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER SECTION END -->
+        <!-- SECTION 1 START -->
+        <div class="section-1">
+            <div class="wrapper">
+                <div
+                    class="heading"
+                    pardot-region="section1_heading"
+                    pardot-region-type="WYSINWYG"
+                >
+                    <h1>
+                        Hello, Manhattan!
+                        <span
+                            >Meet Medly, The Better Pharmacy for Everyone
+                        </span>
+                    </h1>
+                </div>
+                <div
+                    class="description big-p"
+                    pardot-region="section1_description"
+                    pardot-region-type="WYSINWYG"
+                >
+                    <p>
+                        Sign up to get all your medications delivered to your
+                        door by Medly.
+                    </p>
+                </div>
+                <div class="tabber">
+                    <div class="tabber-text-wrap">
+                        <div class="tabber-text event1 form-area">
+                            <form
+                                accept-charset="UTF-8"
+                                method="post"
+                                action="https://go.medly.health/manhattan"
+                                class="form"
+                                id="pardot-form"
+                            >
+                                <style type="text/css">
+                                    form.form p label {
+                                        color: #000000;
+                                        font-size: 18pt;
+                                    }
+                                </style>
+
+                                <p
+                                    class="form-field first_name pd-text required"
+                                >
+                                    <label
+                                        class="field-label"
+                                        for="910032_1379pi_910032_1379"
+                                        >First Name</label
+                                    >
+
+                                    <input
+                                        type="text"
+                                        name="910032_1379pi_910032_1379"
+                                        id="910032_1379pi_910032_1379"
+                                        value=""
+                                        class="text"
+                                        size="30"
+                                        maxlength="40"
+                                        onchange=""
+                                        onfocus=""
+                                    />
+                                </p>
+                                <div
+                                    id="error_for_910032_1379pi_910032_1379"
+                                    style="display: none"
+                                ></div>
+
+                                <p
+                                    class="form-field last_name pd-text required"
+                                >
+                                    <label
+                                        class="field-label"
+                                        for="910032_1381pi_910032_1381"
+                                        >Last Name</label
+                                    >
+
+                                    <input
+                                        type="text"
+                                        name="910032_1381pi_910032_1381"
+                                        id="910032_1381pi_910032_1381"
+                                        value=""
+                                        class="text"
+                                        size="30"
+                                        maxlength="80"
+                                        onchange=""
+                                        onfocus=""
+                                    />
+                                </p>
+                                <div
+                                    id="error_for_910032_1381pi_910032_1381"
+                                    style="display: none"
+                                ></div>
+
+                                <p class="form-field email pd-text required">
+                                    <label
+                                        class="field-label"
+                                        for="910032_1383pi_910032_1383"
+                                        >Email</label
+                                    >
+
+                                    <input
+                                        type="text"
+                                        name="910032_1383pi_910032_1383"
+                                        id="910032_1383pi_910032_1383"
+                                        value=""
+                                        class="text"
+                                        size="30"
+                                        maxlength="255"
+                                        onchange="piAjax.auditEmailField(this, 910032, 1383, 2353);"
+                                        onfocus=""
+                                    />
+                                </p>
+                                <div
+                                    id="error_for_910032_1383pi_910032_1383"
+                                    style="display: none"
+                                ></div>
+
+                                <p class="form-field phone pd-text required">
+                                    <label
+                                        class="field-label"
+                                        for="910032_1385pi_910032_1385"
+                                        >Mobile Number</label
+                                    >
+
+                                    <input
+                                        type="text"
+                                        name="910032_1385pi_910032_1385"
+                                        id="910032_1385pi_910032_1385"
+                                        value=""
+                                        class="text"
+                                        size="30"
+                                        maxlength="40"
+                                        onchange=""
+                                        onfocus=""
+                                    />
+                                </p>
+                                <div
+                                    id="error_for_910032_1385pi_910032_1385"
+                                    style="display: none"
+                                ></div>
+
+                                <p class="form-field Provider_Check pd-radio">
+                                    <label
+                                        class="field-label"
+                                        for="910032_1477pi_910032_1477"
+                                        >Are you a provider?</label
+                                    >
+
+                                    <span class="value"
+                                        ><span class="" style=""
+                                            ><input
+                                                type="radio"
+                                                name="910032_1477pi_910032_1477[]"
+                                                id="910032_1477pi_910032_1477_1897_1897"
+                                                value="1897"
+                                                onchange=""
+                                            /><label
+                                                class="inline"
+                                                for="910032_1477pi_910032_1477_1897_1897"
+                                                >No</label
+                                            ></span
+                                        ><span class="" style=""
+                                            ><input
+                                                type="radio"
+                                                name="910032_1477pi_910032_1477[]"
+                                                id="910032_1477pi_910032_1477_1899_1899"
+                                                value="1899"
+                                                onchange=""
+                                            /><label
+                                                class="inline"
+                                                for="910032_1477pi_910032_1477_1899_1899"
+                                                >Yes</label
+                                            ></span
+                                        ></span
+                                    >
+                                </p>
+                                <div
+                                    id="error_for_910032_1477pi_910032_1477"
+                                    style="display: none"
+                                ></div>
+
+                                <p class="form-field NPI pd-text">
+                                    <label
+                                        class="field-label"
+                                        for="910032_2121pi_910032_2121"
+                                        >NPI (if you are a provider)</label
+                                    >
+
+                                    <input
+                                        type="text"
+                                        name="910032_2121pi_910032_2121"
+                                        id="910032_2121pi_910032_2121"
+                                        value=""
+                                        class="text"
+                                        size="30"
+                                        maxlength="65535"
+                                        onchange=""
+                                        onfocus=""
+                                    />
+                                </p>
+                                <div
+                                    id="error_for_910032_2121pi_910032_2121"
+                                    style="display: none"
+                                ></div>
+
+                                <p
+                                    class="form-field font-size:10px; SMS_Opt_in pd-radio required"
+                                >
+                                    <label
+                                        class="field-label"
+                                        for="910032_2111pi_910032_2111"
+                                        >I agree to opt-in to receive SMS alerts
+                                        from Medly Pharmacy for information and
+                                        updates about Medly services for help.
+                                        *</label
+                                    >
+
+                                    <span class="value"
+                                        ><span class="" style=""
+                                            ><input
+                                                type="radio"
+                                                name="910032_2111pi_910032_2111[]"
+                                                id="910032_2111pi_910032_2111_2617_2617"
+                                                value="2617"
+                                                onchange=""
+                                            /><label
+                                                class="inline"
+                                                for="910032_2111pi_910032_2111_2617_2617"
+                                                >Yes</label
+                                            ></span
+                                        ><span class="" style=""
+                                            ><input
+                                                type="radio"
+                                                name="910032_2111pi_910032_2111[]"
+                                                id="910032_2111pi_910032_2111_2619_2619"
+                                                value="2619"
+                                                onchange=""
+                                            /><label
+                                                class="inline"
+                                                for="910032_2111pi_910032_2111_2619_2619"
+                                                >No</label
+                                            ></span
+                                        ></span
+                                    >
+                                </p>
+                                <div
+                                    id="error_for_910032_2111pi_910032_2111"
+                                    style="display: none"
+                                ></div>
+
+                                <p
+                                    style="
+                                        position: absolute;
+                                        width: 190px;
+                                        left: -9999px;
+                                        top: -9999px;
+                                        visibility: hidden;
+                                    "
+                                >
+                                    <label for="pi_extra_field">Comments</label>
+                                    <input
+                                        type="text"
+                                        name="pi_extra_field"
+                                        id="pi_extra_field"
+                                    />
+                                </p>
+
+                                <!-- forces IE5-8 to correctly submit UTF8 content  -->
+                                <input
+                                    name="_utf8"
+                                    type="hidden"
+                                    value="&#9731;"
+                                />
+
+                                <p class="submit">
+                                    <input
+                                        type="submit"
+                                        accesskey="s"
+                                        value="Sign Up Now"
+                                    />
+                                </p>
+                                <pre class="ckeditor_codeblock">
+
+&nbsp;</pre
+                                >
+
+                                <p style="float: left; display: inline">
+                                    <span style="color: #e74c3c"
+                                        >*&nbsp;<span
+                                            style="
+                                                font-family: Slack-Lato,
+                                                    appleLogo, sans-serif;
+                                                font-size: 15px;
+                                                font-style: normal;
+                                                font-variant-ligatures: common-ligatures;
+                                                font-variant-caps: normal;
+                                                font-weight: 400;
+                                                letter-spacing: normal;
+                                                text-align: left;
+                                                text-indent: 0px;
+                                                text-transform: none;
+                                                white-space: normal;
+                                                word-spacing: 0px;
+                                                -webkit-text-stroke-width: 0px;
+                                                background-color: transparent;
+                                                text-decoration-thickness: initial;
+                                                text-decoration-style: initial;
+                                                text-decoration-color: initial;
+                                                display: inline !important;
+                                                float: none;
+                                            "
+                                        >
+                                            required field</span
+                                        ></span
+                                    >
+                                </p>
+
+                                <script type="text/javascript">
+                                    //<![CDATA[
+
+                                    var anchors = document.getElementsByTagName(
+                                        "a"
+                                    );
+                                    for (var i = 0; i < anchors.length; i++) {
+                                        var anchor = anchors[i];
+                                        if (
+                                            anchor.getAttribute("href") &&
+                                            !anchor.getAttribute("target")
+                                        ) {
+                                            anchor.target = "_top";
+                                        }
+                                    }
+
+                                    //]]>
+                                </script>
+                                <input
+                                    type="hidden"
+                                    name="hiddenDependentFields"
+                                    id="hiddenDependentFields"
+                                    value=""
+                                />
+                            </form>
+                            <script type="text/javascript">
+                                (function () {
+                                    pardot.$(document).ready(function () {
+                                        (function () {
+                                            var $ = window.pardot.$;
+                                            window.pardot.FormDependencyMap = [];
+
+                                            $(
+                                                ".form-field-master input, .form-field-master select"
+                                            ).each(function (index, input) {
+                                                $(input).on(
+                                                    "change",
+                                                    window.piAjax
+                                                        .checkForDependentField
+                                                );
+                                                window.piAjax.checkForDependentField.call(
+                                                    input
+                                                );
+                                            });
+                                        })();
+                                    });
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 1 END -->
+        <!-- SECTION 4 START -->
+        <div class="section-4">
+            <div class="wrapper">
+                <div
+                    class="left-col"
+                    pardot-region="section4_left_content"
+                    pardot-region-type="WYSINWYG"
+                >
+                    <a
+                        data-fancybox
+                        data-width="640"
+                        data-height="360"
+                        href="https://www.youtube.com/watch?v=fl52_XdT-Kg"
+                    >
+                        <div class="thumbnail">
+                            <img
+                                src="https://storage.pardot.com/910032/161428851672lZZymm/Video_Screen_Sized_B.jpg"
+                                alt="video"
+                                preload
+                            />
+                        </div>
+                        <div class="play-icon">
+                            <img
+                                src="https://storage.pardot.com/910032/1613039967HZosv0at/play_button.png"
+                                alt="play"
+                            />
+                        </div>
+                        <div class="cta">
+                            <p>Watch How It Works</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="right-col">
+                    <div
+                        class="heading"
+                        pardot-region="section4_right_heading"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <h2>How It Works</h2>
+                    </div>
+                    <div
+                        class="description"
+                        pardot-region="section4_right_description"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <ol>
+                            <li>
+                                <span>
+                                    Call or text us at
+                                    <a href="tel:2123691350">212-369-1350</a>,
+                                    or email us at
+                                    <a href="mailto:hello@medlypharmacy.com">
+                                        hello@medlypharmacy.com.
+                                    </a>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Schedule your delivery by text <br />
+                                    or phone.</span
+                                >
+                            </li>
+                            <li>
+                                <span>
+                                    Track your order right up until your meds
+                                    are delivered.</span
+                                >
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 4 END -->
+
+        <!-- SECTION 3 START -->
+        <div class="section-3">
+            <div class="wrapper">
+                <div
+                    class="heading"
+                    pardot-region="section3_heading"
+                    pardot-region-type="WYSINWYG"
+                >
+                    <h2>The Medly Benefits</h2>
+                </div>
+                <div class="four-col-adjust">
+                    <span>
+                        <div class="hs_cos_wrapper">
+                            <div class="img">
+                                <img
+                                    src="https://storage.pardot.com/910032/16136620463ZBm5sCn/Benefit_01.svg"
+                                    width="102px"
+                                    alt="free-delivery"
+                                    pardot-region="section3_box1_image"
+                                    pardot-region-type="image"
+                                />
+                            </div>
+                            <div
+                                class="text"
+                                pardot-region="section3_box1_content"
+                                pardot-region-type="WYSINWYG"
+                            >
+                                <div class="card-heading">
+                                    <h5>Free Same-Day Delivery</h5>
+                                </div>
+                                <div class="card-description">
+                                    <p>
+                                        Schedule your delivery via app, phone,
+                                        or text message to get your meds that
+                                        day.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs_cos_wrapper">
+                            <div class="img">
+                                <img
+                                    src="https://storage.pardot.com/910032/1613662047b84GZPKO/Benefit_03.svg"
+                                    width="124px"
+                                    alt="prof-pharmacists"
+                                    pardot-region="section3_box2_image"
+                                    pardot-region-type="image"
+                                />
+                            </div>
+                            <div
+                                class="text"
+                                pardot-region="section3_box2_content"
+                                pardot-region-type="WYSINWYG"
+                            >
+                                <div class="card-heading">
+                                    <h5>Professional Pharmacists</h5>
+                                </div>
+                                <div class="card-description">
+                                    <p>
+                                        Questions?<br />
+                                        Try a confidential consultation any day
+                                        <br />of the week.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs_cos_wrapper">
+                            <div class="img">
+                                <img
+                                    src="https://storage.pardot.com/910032/1613662047Zs6Ik6iD/Benefit_04.svg"
+                                    width="88px"
+                                    alt="financial-support"
+                                    pardot-region="section3_box3_image"
+                                    pardot-region-type="image"
+                                />
+                            </div>
+                            <div
+                                class="text"
+                                pardot-region="section3_box3_content"
+                                pardot-region-type="WYSINWYG"
+                            >
+                                <div class="card-heading">
+                                    <h5>
+                                        Financial<br />
+                                        Support
+                                    </h5>
+                                </div>
+                                <div class="card-description">
+                                    <p>
+                                        We’ll help reduce costs through copay
+                                        discount cards or co-pay foundations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs_cos_wrapper">
+                            <div class="img">
+                                <img
+                                    src="https://storage.pardot.com/910032/1613662046gpNM0ki2/Benefit_02.svg"
+                                    width="93px"
+                                    alt="support"
+                                    pardot-region="section3_box4_image"
+                                    pardot-region-type="image"
+                                />
+                            </div>
+                            <div
+                                class="text"
+                                pardot-region="section3_box4_content"
+                                pardot-region-type="WYSINWYG"
+                            >
+                                <div class="card-heading">
+                                    <h5>Prior Authorization Support</h5>
+                                </div>
+                                <div class="card-description">
+                                    <p>
+                                        We work with your health team to handle
+                                        prior authorizations for faster
+                                        delivery.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 3 END -->
+
+        <!-- SECTION 5 START -->
+        <div class="section-5">
+            <div class="wrapper">
+                <div
+                    class="heading"
+                    pardot-region="section5_heading"
+                    pardot-region-type="WYSINWYG"
+                >
+                    <h2>Specialties</h2>
+                </div>
+                <div
+                    class="description big-p"
+                    pardot-region="section5_description"
+                    pardot-region-type="WYSINWYG"
+                >
+                    <p>
+                        Medly is a full-service local pharmacy that can fill
+                        specialty, brand and generic medications for a wide
+                        variety of health conditions. Our pharmacists have a
+                        deep understanding of:
+                    </p>
+                </div>
+                <div
+                    class="list-item"
+                    pardot-region="section5_items"
+                    pardot-region-type="WYSINWYG"
+                >
+                    <ul>
+                        <li>Allergy and Immunology</li>
+                        <li>Dermatology</li>
+                        <li>Diabetes/Blood Pressure/ Cholesterol</li>
+                        <li>Fertility/OBGYN</li>
+                        <li>Gastroenterology</li>
+                    </ul>
+                    <ul>
+                        <li>Infectious Disease</li>
+                        <li>Internal Medicine/HIV</li>
+                        <li>Multiple Sclerosis</li>
+                        <li>Neurology</li>
+                        <li>Oncology</li>
+                    </ul>
+                    <ul>
+                        <li>Ophthalmology</li>
+                        <li>Orthopedic</li>
+                        <li>Pediatric</li>
+                        <li>Podiatry</li>
+                        <li>Rheumatology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 5 END -->
+        <!-- SECTION 7 START -->
+        <div class="section-7">
+            <div class="wrapper equal-height-container">
+                <div class="left-col vertical-center">
+                    <div
+                        class="map"
+                        pardot-region="section7_map"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.7337547546!2d-73.94848058459267!3d40.78986707932342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f6029879e623%3A0xb81a41f416f1ed03!2s1868%203rd%20Ave%2C%20New%20York%2C%20NY%2010029%2C%20USA!5e0!3m2!1sen!2sin!4v1612895309410!5m2!1sen!2sin"
+                            width="100%"
+                            height="100%"
+                            frameborder="0"
+                            style="
+                                min-height: 295px;
+                                border: 1px ridge rgba(0, 0, 0, 0.1);
+                                border-radius: 15px;
+                            "
+                            allowfullscreen=""
+                            aria-hidden="false"
+                            tabindex="0"
+                        >
+                        </iframe>
+                    </div>
+                    <div
+                        class="cta"
+                        pardot-region="section7_button"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <a href="https://goo.gl/maps/EEBARmSZridGDjgS7">
+                            <p>Where Are We</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-col vertical-center">
+                    <div
+                        class="heading"
+                        pardot-region="section7_right_heaidng"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div
+                        class="description"
+                        pardot-region="section7_right_description"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <p>
+                            1868 Third Ave. New York, NY 10029<br />
+                            <span>P</span>: 212-369-1350 <span>F</span>:
+                            212-369-2212
+                        </p>
+                        <!-- <img src="https://storage.pardot.com/910032/1614017195BeNOPcjM/1517539820152.jpg" alt="" style="border-radius:15px">
+          <p>Maha Maldonado, Supervising Pharmacist<br>
+            <span>E</span>: maha.maldonado@medly.com
+          </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pharmacist Section Start -->
+        <div class="pharmacist-section">
+            <div class="wrapper">
+                <h3>
+                    Your Local <br />
+                    Pharmacist
+                </h3>
+                <img
+                    src="https://storage.pardot.com/910032/1614275916jseUtlNL/Arrow_Green.svg"
+                    class="arrow-icon"
+                    alt=""
+                />
+                <img
+                    src="https://storage.pardot.com/910032/1614017195BeNOPcjM/1517539820152.jpg"
+                    alt=""
+                    class="pharmacist-image"
+                />
+                <div class="text">
+                    Maha Maldonado<span>Supervising Pharmacist</span
+                    ><a href="mailto:maha.maldonado@medlypharmacy.com"
+                        >maha.maldonado@medlypharmacy.com</a
+                    >
+                </div>
+            </div>
+        </div>
+        <!-- Pharmacist Section End -->
+        <!-- SECTION 7 END -->
+        <!-- SECTION 6 START -->
+        <div class="section-6">
+            <div class="wrapper">
+                <div class="left-col">
+                    <div
+                        class="heading"
+                        pardot-region="section6_heading"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+                    <div class="faq accordion">
+                        <div
+                            class="accordion_group expanded"
+                            pardot-region="section6_box1_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>Is delivery free?</h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    Absolutely! You’ll be able to take care of
+                                    your copay through our app or over the
+                                    phone, but there are no additional charges
+                                    for delivery.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box2_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>How do refills work?</h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    We manage your refills and send them to you
+                                    on time so you shouldn’t miss a dose. We’ll
+                                    keep track of dates, so you don’t have to!
+                                    We'll coordinate with your doctor and your
+                                    insurance company to make sure you never run
+                                    out of medication.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box3_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>
+                                    Do you offer alternative packaging options?
+                                </h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    From blister packs to easy open pill
+                                    bottles, we offer a variety of different
+                                    packaging options that make it easier for
+                                    you to keep track of your medications and
+                                    take them on time. To learn more or to try
+                                    one of our different packaging options, give
+                                    us a call at
+                                    <a href="tel:2123691350">(212) 369-1350</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box4_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>
+                                    How can I get in touch with a pharmacist?
+                                </h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    Request a consultation through our mobile
+                                    app, or get in touch via phone, email, or
+                                    text, and we’ll be in touch soon!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box7_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>How much will my prescription cost?</h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    Depending on your insurance and your
+                                    medication, we determine your copay and
+                                    deductible (if any) beforehand. Our team
+                                    applies financial assistance wherever
+                                    possible and is always available to answer
+                                    additional questions about payment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box8_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>How do I pay for my prescriptions?</h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    All payments can be made via our Medly
+                                    mobile app, over a phone call with our
+                                    support team, or with your driver at the
+                                    time of hand-off. We accept all major credit
+                                    cards and cash at time of delivery.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box9_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>What forms of insurance do you accept?</h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    We accept all major insurances, including
+                                    Medicaid, Medicare, and private insurance.
+                                    If you have questions, feel free to call us
+                                    at
+                                    <a href="tel:2123691350">(212) 369-1350</a>
+                                    and we'll be happy to help.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box5_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>
+                                    I was a patient at Blake Pharmacy before it
+                                    was <br />changed to Medly Pharmacy. Are you
+                                    able to fill the prescriptions I had with
+                                    Blake?
+                                </h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    Yes! If you were a patient of Blake
+                                    Pharmacy, Medly will continue to provide you
+                                    with the same exceptional service you have
+                                    come to expect. Existing customers can still
+                                    tap into the expertise of their local
+                                    pharmacy – walking in to order and pick up
+                                    medications if you so choose – but now you
+                                    will also have access to the digital support
+                                    and benefits that Medly offers, too. If you
+                                    have additional questions, please reach out
+                                    to Medly Pharmacy at
+                                    <a href="tel:2123691350">(212) 369-1350</a>
+                                    and we’ll be happy to help.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="accordion_group"
+                            pardot-region="section6_box6_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="accordion_header accordion-start">
+                                <h4>
+                                    I am a provider that sent my patient’s
+                                    prescriptions <br />to Blake Pharmacy before
+                                    it was changed to Medly Pharmacy. How can I
+                                    get in touch with your team to make sure
+                                    there are no disruptions with my patient’s
+                                    medications?
+                                </h4>
+                            </div>
+                            <div class="accordion_content">
+                                <p>
+                                    Providers will still use the same phone
+                                    numbers to get in touch with Medly Pharmacy.
+                                    You may reach out to us via phone
+                                    <a href="tel:2123691350">(212) 369-1350</a>
+                                    or fax (212) 369-2212. We will continue to
+                                    communicate with you and your patients
+                                    regarding any changes throughout this
+                                    transition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <img
+                        src="https://storage.pardot.com/910032/1613600094yoZ883HA/People.svg"
+                        alt="doc"
+                        pardot-region="section6_image"
+                        pardot-region-type="image"
+                    />
+                </div>
+            </div>
+        </div>
+        <!-- SECTION 6 END -->
+        <!-- FOOTER SECTION START -->
+        <footer>
+            <div class="footer-section">
+                <div class="wrapper">
+                    <div class="footer-top">
+                        <div class="logo">
+                            <img
+                                src="https://storage.pardot.com/910032/1613667271mwMLA2VA/Logo_34_01.svg"
+                                width="40px"
+                                alt="medly_logo"
+                                pardot-region="footer_box1_image"
+                                pardot-region-type="image"
+                            />
+                        </div>
+                        <div
+                            class="menu"
+                            pardot-region="footer_box2_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://medly.com/en-us/about/our-story"
+                                    >
+                                        About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://medly.com/en-us/about/where-we-serve"
+                                    >
+                                        Where we Serve</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://medly.com/en-us/about/faq">
+                                        FAQ</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://medly.com/en-us/about/careers"
+                                    >
+                                        Careers</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://medly.com/en-us/blog">
+                                        Press</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="contact"
+                            pardot-region="footer_box3_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <ul>
+                                <li>
+                                    <a href="tel:2123691350">
+                                        Call or Text: 212-369-1350</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="mailto:hello@medlypharmacy.com">
+                                        Email: hello@medlypharmacy.com</a
+                                    >
+                                </li>
+                                <li>Fax: 212-369-2212</li>
+                            </ul>
+                            <div class="socials">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://twitter.com/medlypharmacy"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.instagram.com/medlypharmacy/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.linkedin.com/company/medly-pharmacy"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/MedlyPharmacy"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="app"
+                            pardot-region="footer_box4_content"
+                            pardot-region-type="WYSINWYG"
+                        >
+                            <div class="legit">
+                                <a
+                                    href="http://legitscript.com/websites/medly.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        src="https://storage.pardot.com/910032/1613039863yEYJfjjT/certified.png"
+                                        alt="legit_approved"
+                                    />
+                                </a>
+                            </div>
+                            <div class="appstore">
+                                <a
+                                    href="https://apps.apple.com/us/app/medly-pharmacy-delivery/id1101899905"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="https://storage.pardot.com/910032/1613666262pqdKpHEh/Download_on_the_App_Store_Badge_US_UK_RGB_blk_092917.svg"
+                                        alt="app_store"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="footer-bottom"
+                        pardot-region="footer_bottom_content"
+                        pardot-region-type="WYSINWYG"
+                    >
+                        <ul>
+                            <li>©2021 Medly Pharmacy</li>
+                            <li>
+                                <a
+                                    href="https://medly.com/en-us/privacy-policy"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Privacy Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://medly.com/en-us/terms-of-service"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Terms of Service</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://medly.com/en-us/hipaa-info"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    HIPPA INFO</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER SECTION END -->
+        <!-- SCRIPT START -->
+        <script>
+            // Accordion
+
+            var $accordion = $(".accordion");
+            // Initially hide all accordion content
+            $accordion.find(".accordion_content").hide();
+            // Initially display the accordion content with .expanded class
+            $accordion
+                .find(".accordion_group.expanded .accordion_content")
+                .show();
+            $accordion.find(".accordion_header").click(function () {
+                // Hide the displayed sibling accordion content so only one appears at a time
+                $accordion
+                    .find(".accordion_header")
+                    .not(this)
+                    .parent(".accordion_group.expanded")
+                    .removeClass("expanded")
+                    .children(".accordion_content")
+                    .stop(true, true)
+                    .slideUp();
+                if (!$(this).parent(".accordion_group").hasClass("expanded")) {
+                    // Display the accordion content if it is not displayed
+                    $(this)
+                        .parent(".accordion_group")
+                        .addClass("expanded")
+                        .children(".accordion_content")
+                        .stop(true, true)
+                        .slideDown();
+                } else {
+                    // Hide the accordion content if it is displayed
+                    $(this)
+                        .parent(".accordion_group")
+                        .removeClass("expanded")
+                        .children(".accordion_content")
+                        .stop(true, true)
+                        .slideUp();
+                }
+            });
+
+            // LABEL AS PLACEHOLDER
+
+            var labels = document.querySelectorAll(
+                "p.pd-text label, p.pd-select label, p.pd-textarea label"
+            );
+            var i = labels.length;
+            while (i--) {
+                var label = labels.item(i);
+                var text = label.textContent;
+                label.parentNode.classList.contains("required") &&
+                    (text += " *");
+                var nextElement = label.nextElementSibling;
+
+                if (nextElement) {
+                    if (nextElement.tagName == "SELECT") {
+                        nextElement.options[0].text = text;
+                    } else {
+                        nextElement.setAttribute("placeholder", text);
+                    }
+                    label.parentNode.removeChild(label);
+                }
+            }
+            var elements = document.querySelectorAll(".errors, .no-label");
+            Array.prototype.forEach.call(elements, function (el, i) {
+                //el.parentNode.removeChild(el);
+            });
+        </script>
+        <!-- Fancy-Box -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        ></script>
+        <!-- SCRIPT END -->
+    </body>
+</html>
